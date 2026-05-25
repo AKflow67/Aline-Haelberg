@@ -349,7 +349,9 @@ ul{list-style:none}
 .sup-card h3{font-family:var(--serif);font-size:1.15rem;font-weight:500;margin-bottom:.65rem}
 .sup-card p{font-size:.8rem;color:var(--mid);line-height:1.65;margin-bottom:.75rem}
 .card-det{font-size:.7rem;color:var(--deep);font-weight:600;letter-spacing:.04em}
-.sup-for{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;background:rgba(184,154,48,.55);border-radius:6px;padding:3rem;color:#fff}
+.sup-for{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;border-radius:6px;padding:3rem;color:#fff}
+.sup-for::before{content:'';position:absolute;inset:0;background:#B89A30;opacity:.55;border-radius:6px;z-index:0}
+.sup-for>*{position:relative;z-index:1}
 .sup-for .lbl{color:rgba(255,255,255,.55)}
 .sup-for .h2{color:#fff}
 .sup-for .h2 em{color:rgba(255,240,190,.9)}
