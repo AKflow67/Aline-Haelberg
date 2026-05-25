@@ -160,36 +160,56 @@ ul{list-style:none}
 }
 .hero-desc strong { color: #fff; font-weight: 500; }
 
-.hero-actions {
+.hero-pictos {
   display: flex;
-  flex-wrap: wrap;
-  gap: .85rem;
-  margin-bottom: 2.5rem;
+  justify-content: center;
+  gap: 2.5rem;
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
   animation: fadeIn 1s ease both;
   animation-delay: .65s;
 }
-.hero-actions .btn-p { background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.3); color:#fff; backdrop-filter:blur(4px); }
-.hero-actions .btn-p:hover { background:rgba(255,255,255,.25); }
-.hero-actions .btn-o { border-color:rgba(255,255,255,.4); color:#fff; backdrop-filter:blur(4px); }
-.hero-actions .btn-o:hover { background:rgba(255,255,255,.12); }
-
-.hero-badges {
+.hero-picto {
   display: flex;
-  flex-wrap: wrap;
-  gap: .55rem;
-  animation: fadeIn 1s ease both;
-  animation-delay: .8s;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+  text-decoration: none;
+  color: #fff;
+  transition: transform .3s ease, opacity .3s ease;
+  cursor: pointer;
 }
-.hero-badge {
+.hero-picto:hover { transform: translateY(-4px); }
+.hero-picto-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.35);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .3s ease, border-color .3s ease;
+}
+.hero-picto:hover .hero-picto-icon {
+  background: rgba(232,200,74,.25);
+  border-color: rgba(232,200,74,.6);
+}
+.hero-picto-icon svg { width: 26px; height: 26px; }
+.hero-picto-label {
+  font-family: var(--sans);
   font-size: .62rem;
-  font-weight: 500;
-  letter-spacing: .08em;
-  color: rgba(255,255,255,.8);
-  border: 1px solid rgba(255,255,255,.2);
-  padding: .3rem .8rem;
-  border-radius: 20px;
-  background: rgba(255,255,255,.08);
-  backdrop-filter: blur(4px);
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0 1px 4px rgba(0,0,0,.4);
+  max-width: 90px;
+  line-height: 1.3;
 }
 
 /* Fleche scroll */
@@ -435,7 +455,10 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
   .nav-links{display:none}
   .burger{display:flex}
   .hero-wrap{text-align:left}
-  .hero-actions,.hero-badges{justify-content:flex-start}
+  .hero-pictos{gap:1.2rem;bottom:40px}
+  .hero-picto-icon{width:44px;height:44px}
+  .hero-picto-icon svg{width:20px;height:20px}
+  .hero-picto-label{font-size:.52rem;max-width:70px}
   .intro-grid,.seances-grid,.sup-for,.apropos-grid,.contact-grid,.rebozo-grid,.perinatal-grid,.enfants-grid{grid-template-columns:1fr;gap:2.5rem}
   .pillars,.sup-cards{grid-template-columns:1fr}
   .pourqui-list{columns:1}
@@ -461,8 +484,10 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
     <ul class="nav-links">
       <li><a href="#kinesiologie">La kinésiologie</a></li>
       <li><a href="#seances">Séances</a></li>
-      <li><a href="#rebozo">Rebozo</a></li>
+      <li><a href="#perinatal">Périnatal</a></li>
+      <li><a href="#ateliers">Ateliers</a></li>
       <li><a href="#supervision">Supervision</a></li>
+      <li><a href="#rebozo">Rebozo</a></li>
       <li><a href="#apropos">À propos</a></li>
       <li><a href="tel:+33757474336" class="btn nav-cta">Appeler</a></li>
     </ul>
@@ -476,9 +501,10 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
 <nav class="mobile-menu">
   <a href="#kinesiologie" onclick="this.parentElement.classList.remove('open')">La kinésiologie</a>
   <a href="#seances" onclick="this.parentElement.classList.remove('open')">Séances</a>
-  <a href="#rebozo" onclick="this.parentElement.classList.remove('open')">Rebozo</a>
-  <a href="#perinatal" onclick="this.parentElement.classList.remove('open')">Périnatalité</a>
+  <a href="#perinatal" onclick="this.parentElement.classList.remove('open')">Périnatal</a>
+  <a href="#ateliers" onclick="this.parentElement.classList.remove('open')">Ateliers</a>
   <a href="#supervision" onclick="this.parentElement.classList.remove('open')">Supervision</a>
+  <a href="#rebozo" onclick="this.parentElement.classList.remove('open')">Rebozo</a>
   <a href="#apropos" onclick="this.parentElement.classList.remove('open')">À propos</a>
   <a href="tel:+33757474336" class="btn btn-p" style="text-align:center">Appeler pour RDV</a>
 </nav>
@@ -501,15 +527,66 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
       <strong>Kinésiologie, rebozo, accompagnement périnatal</strong>
       et supervision de kinesiologues.
     </p>
-    <div class="hero-actions">
-      <a href="tel:+33757474336" class="btn btn-p">Appeler pour prendre RDV</a>
-      <a href="#kinesiologie" class="btn btn-o">Découvrir mes accompagnements</a>
-    </div>
-    <div class="hero-badges">
-      <span class="hero-badge">Cabinet Bagnères-de-Bigorre</span>
-      <span class="hero-badge">Rebozo à domicile</span>
-      <span class="hero-badge">Supervision kinesiologues</span>
-    </div>
+  </div>
+
+  <div class="hero-pictos">
+    <a href="#seances" class="hero-picto">
+      <div class="hero-picto-icon">
+        <svg viewBox="0 0 26 26" fill="none" stroke="#fff" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="13" cy="7" r="4"/>
+          <path d="M5,22 C5,16.5 8.5,12 13,12 C17.5,12 21,16.5 21,22"/>
+          <path d="M9,17 C10,15.5 11.5,15 13,15" opacity=".5"/>
+        </svg>
+      </div>
+      <span class="hero-picto-label">Séance individuelle</span>
+    </a>
+    <a href="#perinatal" class="hero-picto">
+      <div class="hero-picto-icon">
+        <svg viewBox="0 0 26 26" fill="none" stroke="#fff" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+          <ellipse cx="13" cy="15" rx="6" ry="7"/>
+          <path d="M10,11 C11,9 12,8.5 13,8.5 C14,8.5 15,9 16,11" opacity=".5"/>
+          <circle cx="13" cy="15.5" r="2" stroke-width="1"/>
+          <path d="M13,13.5 L13,12" opacity=".6"/>
+        </svg>
+      </div>
+      <span class="hero-picto-label">Périnatal</span>
+    </a>
+    <a href="#ateliers" class="hero-picto">
+      <div class="hero-picto-icon">
+        <svg viewBox="0 0 26 26" fill="none" stroke="#fff" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="8" r="3"/>
+          <circle cx="17" cy="8" r="3"/>
+          <circle cx="13" cy="16" r="3"/>
+          <path d="M9,11 L11,14" opacity=".4"/>
+          <path d="M17,11 L15,14" opacity=".4"/>
+          <path d="M6,22 C6,19 7.5,17 9,17"/>
+          <path d="M20,22 C20,19 18.5,17 17,17"/>
+          <path d="M10,22 C10,20 11.5,19 13,19 C14.5,19 16,20 16,22"/>
+        </svg>
+      </div>
+      <span class="hero-picto-label">Atelier &amp; formation</span>
+    </a>
+    <a href="#supervision" class="hero-picto">
+      <div class="hero-picto-icon">
+        <svg viewBox="0 0 26 26" fill="none" stroke="#fff" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="13" cy="13" r="9"/>
+          <path d="M13,4 L13,13 L19,17"/>
+          <circle cx="13" cy="13" r="1.5" fill="#fff" stroke="none" opacity=".4"/>
+        </svg>
+      </div>
+      <span class="hero-picto-label">Supervision</span>
+    </a>
+    <a href="#rebozo" class="hero-picto">
+      <div class="hero-picto-icon">
+        <svg viewBox="0 0 26 26" fill="none" stroke="#fff" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4,14 C4,8 8,4 13,4 C18,4 22,8 22,14"/>
+          <path d="M7,14 C7,10 9.5,7 13,7 C16.5,7 19,10 19,14" opacity=".5"/>
+          <path d="M4,14 C6,18 9,20 13,22 C17,20 20,18 22,14"/>
+          <path d="M10,14 L13,18 L16,14" opacity=".4"/>
+        </svg>
+      </div>
+      <span class="hero-picto-label">Rebozo</span>
+    </a>
   </div>
 
   <div class="hero-scroll">
@@ -683,7 +760,7 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
 </section>
 
 <!-- ATELIERS / FORMATIONS -->
-<section class="ateliers">
+<section class="ateliers" id="ateliers">
   <div class="wrap">
     <div class="ateliers-content">
       <span class="lbl r">Ateliers et formations</span>
