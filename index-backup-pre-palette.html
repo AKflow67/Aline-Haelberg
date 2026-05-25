@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aline Haelberg - Kinésiologue à Bagnères-de-Bigorre</title>
-<meta name="description" content="Aline Haelberg, kinésiologue certifiée CFK à Bagnères-de-Bigorre. Séances de kinésiologie adultes et enfants, soin rituel rebozo, accompagnement périnatal et supervision de kinésiologues.">
+<title>Aline Haelberg - Kinesiologue a Bagneres-de-Bigorre</title>
+<meta name="description" content="Aline Haelberg, kinesiologue certifiee CFK a Bagneres-de-Bigorre. Seances de kinesiologie adultes et enfants, soin rituel rebozo, accompagnement perinatal et supervision de kinesiologues.">
 <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,29 +14,30 @@
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Aline Haelberg - Kinesiologue",
-  "description": "Kinésiologue certifiée CFK à Bagnères-de-Bigorre. Séances de kinésiologie, soin rituel rebozo, accompagnement périnatal et supervision de kinésiologues.",
+  "description": "Kinesiologue certifiee CFK a Bagneres-de-Bigorre. Seances de kinesiologie, soin rituel rebozo, accompagnement perinatal et supervision de kinesiologues.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "2 rue Joseph Lafranque",
-    "addressLocality": "Bagnères-de-Bigorre",
+    "addressLocality": "Bagneres-de-Bigorre",
     "postalCode": "65200",
     "addressRegion": "Occitanie",
     "addressCountry": "FR"
   },
   "telephone": "+33757474336",
+  "email": "contact@alinehaelberg.fr",
   "url": "https://alinehaelberg.fr",
   "openingHoursSpecification": [
-    {"@type": "OpeningHoursSpecification","dayOfWeek": "Monday","opens": "09:00","closes": "19:00"},
-    {"@type": "OpeningHoursSpecification","dayOfWeek": "Wednesday","opens": "09:00","closes": "19:00"},
-    {"@type": "OpeningHoursSpecification","dayOfWeek": "Thursday","opens": "09:00","closes": "19:00"}
+    {"@type": "OpeningHoursSpecification","dayOfWeek": "Monday","opens": "09:30","closes": "20:00"},
+    {"@type": "OpeningHoursSpecification","dayOfWeek": "Wednesday","opens": "09:00","closes": "20:00"},
+    {"@type": "OpeningHoursSpecification","dayOfWeek": "Thursday","opens": "10:00","closes": "19:00"}
   ]
 }</script>
 <style>
 /* ---- VARIABLES ---- */
 :root{
-  --cream:#FFFBF2; --cream-dk:#F6F1E9; --sage:#E8C84A; --deep:#C9A82C;
-  --sage-pale:#FDF6E0; --earth:#8B7355; --earth-pale:#F7F0E4;
-  --ink:#2A2A2A; --mid:#6B6B6B; --line:rgba(232,200,74,0.22);
+  --cream:#F6F1E9; --cream-dk:#EDE6D8; --sage:#6B8F6E; --deep:#3E5E42;
+  --sage-pale:#E6EFE7; --earth:#9C7A52; --earth-pale:#F2EAE0;
+  --ink:#2A2A2A; --mid:#6B6B6B; --line:rgba(107,143,110,0.22);
   --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
   --sans:"Nunito Sans","Segoe UI",system-ui,sans-serif;
 }
@@ -55,14 +56,14 @@ ul{list-style:none}
 .bar{width:44px;height:2px;background:var(--sage);margin:1.2rem 0 1.5rem}
 .btn{display:inline-block;padding:.8rem 1.8rem;border-radius:3px;font-family:var(--sans);font-size:.8rem;font-weight:600;letter-spacing:.05em;transition:background .35s cubic-bezier(.4,0,.2,1),transform .35s cubic-bezier(.4,0,.2,1),box-shadow .35s cubic-bezier(.4,0,.2,1),color .35s cubic-bezier(.4,0,.2,1),border-color .35s cubic-bezier(.4,0,.2,1);cursor:pointer;border:none}
 .btn-p{background:var(--deep);color:#fff}
-.btn-p:hover{background:var(--sage);transform:translateY(-2px);box-shadow:0 8px 24px rgba(201,168,44,.25)}
+.btn-p:hover{background:var(--sage);transform:translateY(-2px);box-shadow:0 8px 24px rgba(62,94,66,.25)}
 .btn-o{border:1.5px solid var(--deep);color:var(--deep);background:transparent}
 .btn-o:hover{background:var(--deep);color:#fff;transform:translateY(-2px)}
 .btn-e{background:var(--earth);color:#fff}
 .btn-e:hover{background:#7e6040;transform:translateY(-2px)}
 
 /* ---- NAV ---- */
-.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,251,242,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);height:64px;display:flex;align-items:center}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(246,241,233,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);height:64px;display:flex;align-items:center}
 .nav-in{display:flex;align-items:center;justify-content:space-between;width:100%}
 .logo-name{font-family:var(--serif);font-size:1.15rem;font-weight:500;color:var(--deep)}
 .logo-sub{font-size:.6rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--mid);margin-top:2px}
@@ -74,7 +75,7 @@ ul{list-style:none}
 /* ---- BURGER MOBILE ---- */
 .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none}
 .burger span{width:22px;height:2px;background:var(--ink);transition:transform .3s ease,opacity .3s ease}
-.mobile-menu{display:none;position:fixed;top:64px;left:0;right:0;background:rgba(255,251,242,.98);backdrop-filter:blur(10px);padding:1.5rem 2rem;border-bottom:1px solid var(--line);flex-direction:column;gap:1rem;z-index:99}
+.mobile-menu{display:none;position:fixed;top:64px;left:0;right:0;background:rgba(246,241,233,.98);backdrop-filter:blur(10px);padding:1.5rem 2rem;border-bottom:1px solid var(--line);flex-direction:column;gap:1rem;z-index:99}
 .mobile-menu.open{display:flex}
 .mobile-menu a{font-size:.9rem;font-weight:500;color:var(--mid);padding:.5rem 0}
 
@@ -111,8 +112,8 @@ ul{list-style:none}
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to right,  rgba(30,22,10,.72) 0%, rgba(30,22,10,.35) 60%, transparent 100%),
-    linear-gradient(to top,    rgba(25,18,8,.65) 0%, transparent 50%);
+    linear-gradient(to right,  rgba(15,30,18,.72) 0%, rgba(15,30,18,.35) 60%, transparent 100%),
+    linear-gradient(to top,    rgba(10,20,12,.65) 0%, transparent 50%);
 }
 
 .hero-wrap {
@@ -146,7 +147,7 @@ ul{list-style:none}
   animation: fadeIn .9s ease both;
   animation-delay: .35s;
 }
-.hero-title strong { display:block; font-weight:500; font-style:italic; color:rgba(255,245,210,.97); }
+.hero-title strong { display:block; font-weight:500; font-style:italic; color:rgba(230,242,232,.97); }
 
 .hero-desc {
   font-size: 1rem;
@@ -291,9 +292,9 @@ ul{list-style:none}
 .step-t p{font-size:.78rem;color:var(--mid);line-height:1.5}
 
 /* sidebar tarifs */
-.tarif{background:var(--earth-pale);border:1px solid rgba(139,115,85,.2);border-radius:5px;padding:1.75rem;margin-bottom:1.25rem}
+.tarif{background:var(--earth-pale);border:1px solid rgba(156,122,82,.2);border-radius:5px;padding:1.75rem;margin-bottom:1.25rem}
 .tarif h3{font-family:var(--serif);font-size:1.2rem;font-weight:400;margin-bottom:1rem}
-.tarif-row{display:flex;justify-content:space-between;align-items:baseline;padding:.65rem 0;border-bottom:1px solid rgba(139,115,85,.12);font-size:.82rem}
+.tarif-row{display:flex;justify-content:space-between;align-items:baseline;padding:.65rem 0;border-bottom:1px solid rgba(156,122,82,.12);font-size:.82rem}
 .tarif-row:last-of-type{border:none}
 .tarif-row .lbl{color:var(--mid)}
 .tarif-row .price{font-family:var(--serif);font-size:1.1rem;color:var(--earth);font-weight:500}
@@ -316,7 +317,7 @@ ul{list-style:none}
 .rebozo-details{display:flex;flex-direction:column;gap:.65rem;margin:1.5rem 0}
 .rebozo-detail{display:flex;align-items:flex-start;gap:.65rem;font-size:.85rem;line-height:1.5}
 .rebozo-detail::before{content:'\2022';color:var(--earth);flex-shrink:0}
-.rebozo-price{background:var(--earth-pale);border:1px solid rgba(139,115,85,.2);border-radius:5px;padding:1.5rem;text-align:center;margin-top:1.5rem}
+.rebozo-price{background:var(--earth-pale);border:1px solid rgba(156,122,82,.2);border-radius:5px;padding:1.5rem;text-align:center;margin-top:1.5rem}
 .rebozo-price .price{font-family:var(--serif);font-size:2rem;color:var(--earth);font-weight:500}
 .rebozo-price p{font-size:.75rem;color:var(--mid);margin-top:.3rem}
 
@@ -352,7 +353,7 @@ ul{list-style:none}
 .sup-for{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;background:var(--deep);border-radius:6px;padding:3rem;color:#fff}
 .sup-for .lbl{color:rgba(255,255,255,.55)}
 .sup-for .h2{color:#fff}
-.sup-for .h2 em{color:rgba(255,240,190,.9)}
+.sup-for .h2 em{color:rgba(230,239,231,.9)}
 .sup-for .bar{background:rgba(255,255,255,.35)}
 .sup-for-desc{color:rgba(255,255,255,.75);font-size:.88rem;line-height:1.8;margin-bottom:1.5rem}
 .for-list{display:flex;flex-direction:column;gap:.65rem}
@@ -374,7 +375,7 @@ ul{list-style:none}
 .apropos-grid{display:grid;grid-template-columns:2fr 3fr;gap:5rem;align-items:start}
 .photo-sticky{position:sticky;top:80px}
 .photo-frame{aspect-ratio:3/4;border-radius:4px;overflow:hidden;position:relative}
-.photo-frame::after{content:'';position:absolute;inset:10px;border:1px solid rgba(232,200,74,.28);border-radius:2px;pointer-events:none}
+.photo-frame::after{content:'';position:absolute;inset:10px;border:1px solid rgba(107,143,110,.28);border-radius:2px;pointer-events:none}
 .photo-frame img{width:100%;height:100%;object-fit:cover;object-position:top center}
 .photo-cap{margin-top:.9rem;font-size:.68rem;color:var(--mid);text-align:center;font-style:italic}
 .bio{font-size:.92rem;color:var(--mid);line-height:1.85;margin-bottom:1.25rem}
@@ -456,15 +457,15 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
   <div class="wrap nav-in">
     <a href="#" style="display:flex;flex-direction:column;line-height:1">
       <span class="logo-name">Aline Haelberg</span>
-      <span class="logo-sub">Kinésiologue - Bagnères-de-Bigorre</span>
+      <span class="logo-sub">Kinesiologue - Bagneres-de-Bigorre</span>
     </a>
     <ul class="nav-links">
-      <li><a href="#kinesiologie">La kinésiologie</a></li>
-      <li><a href="#seances">Séances</a></li>
+      <li><a href="#kinesiologie">La kinesiologie</a></li>
+      <li><a href="#seances">Seances</a></li>
       <li><a href="#rebozo">Rebozo</a></li>
       <li><a href="#supervision">Supervision</a></li>
-      <li><a href="#apropos">À propos</a></li>
-      <li><a href="tel:+33757474336" class="btn nav-cta">Appeler</a></li>
+      <li><a href="#apropos">A propos</a></li>
+      <li><a href="#contact" class="btn nav-cta">Prendre RDV</a></li>
     </ul>
     <button class="burger" onclick="document.querySelector('.mobile-menu').classList.toggle('open')" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -474,13 +475,13 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
 
 <!-- MENU MOBILE -->
 <nav class="mobile-menu">
-  <a href="#kinesiologie" onclick="this.parentElement.classList.remove('open')">La kinésiologie</a>
-  <a href="#seances" onclick="this.parentElement.classList.remove('open')">Séances</a>
+  <a href="#kinesiologie" onclick="this.parentElement.classList.remove('open')">La kinesiologie</a>
+  <a href="#seances" onclick="this.parentElement.classList.remove('open')">Seances</a>
   <a href="#rebozo" onclick="this.parentElement.classList.remove('open')">Rebozo</a>
-  <a href="#perinatal" onclick="this.parentElement.classList.remove('open')">Périnatalité</a>
+  <a href="#perinatal" onclick="this.parentElement.classList.remove('open')">Perinatalite</a>
   <a href="#supervision" onclick="this.parentElement.classList.remove('open')">Supervision</a>
-  <a href="#apropos" onclick="this.parentElement.classList.remove('open')">À propos</a>
-  <a href="tel:+33757474336" class="btn btn-p" style="text-align:center">Appeler pour RDV</a>
+  <a href="#apropos" onclick="this.parentElement.classList.remove('open')">A propos</a>
+  <a href="#contact" onclick="this.parentElement.classList.remove('open')" class="btn btn-p" style="text-align:center">Prendre RDV</a>
 </nav>
 
 <!-- HERO -->
@@ -489,25 +490,25 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
   <div class="hero-overlay"></div>
 
   <div class="hero-wrap">
-    <div class="hero-eyebrow"><span>Kinésiologue certifiée CFK - Hautes-Pyrénées</span></div>
+    <div class="hero-eyebrow"><span>Kinesiologue certifiee CFK - Hautes-Pyrenees</span></div>
     <h1 class="hero-title">
       Retrouver<br>
-      <strong>l'équilibre</strong>
+      <strong>l'equilibre</strong>
       en soi
     </h1>
     <p class="hero-desc">
-      A Bagnères-de-Bigorre, j'accompagne adultes et enfants
-      vers un mieux-être physique, mental et émotionnel.
-      <strong>Kinésiologie, rebozo, accompagnement périnatal</strong>
+      A Bagneres-de-Bigorre, j'accompagne adultes et enfants
+      vers un mieux-etre physique, mental et emotionnel.
+      <strong>Kinesiologie, rebozo, accompagnement perinatal</strong>
       et supervision de kinesiologues.
     </p>
     <div class="hero-actions">
-      <a href="tel:+33757474336" class="btn btn-p">Appeler pour prendre RDV</a>
-      <a href="#kinesiologie" class="btn btn-o">Découvrir mes accompagnements</a>
+      <a href="#contact" class="btn btn-p">Prendre rendez-vous</a>
+      <a href="#kinesiologie" class="btn btn-o">Decouvrir mes accompagnements</a>
     </div>
     <div class="hero-badges">
-      <span class="hero-badge">Cabinet Bagnères-de-Bigorre</span>
-      <span class="hero-badge">Rebozo à domicile</span>
+      <span class="hero-badge">Cabinet Bagneres-de-Bigorre</span>
+      <span class="hero-badge">Rebozo a domicile</span>
       <span class="hero-badge">Supervision kinesiologues</span>
     </div>
   </div>
@@ -524,7 +525,7 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
   </div>
 
   <svg style="position:absolute;bottom:-1px;left:0;right:0;pointer-events:none" viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-    <path d="M0,80 L0,40 Q180,0 360,30 Q540,60 720,20 Q900,-20 1080,25 Q1260,70 1440,35 L1440,80Z" fill="#FFFBF2"/>
+    <path d="M0,80 L0,40 Q180,0 360,30 Q540,60 720,20 Q900,-20 1080,25 Q1260,70 1440,35 L1440,80Z" fill="#F6F1E9"/>
   </svg>
 </section>
 
@@ -538,11 +539,11 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
       </div>
       <div class="stat-item r d1">
         <span class="stat-count" data-count="8">0</span>
-        <span class="stat-label">méthodes maîtrisées</span>
+        <span class="stat-label">methodes maitrisees</span>
       </div>
       <div class="stat-item r d2">
         <span class="stat-count" data-count="65">0</span>
-        <span class="stat-label">Hautes-Pyrénées</span>
+        <span class="stat-label">Hautes-Pyrenees</span>
       </div>
     </div>
   </div>
@@ -553,39 +554,39 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
   <div class="wrap">
     <div class="intro-grid">
       <div class="r sl">
-        <span class="lbl">La kinésiologie</span>
-        <h2 class="h2">Libérer les tensions<br><em>pour retrouver<br>la paix en soi</em></h2>
+        <span class="lbl">La kinesiologie</span>
+        <h2 class="h2">Liberer les tensions<br><em>pour retrouver<br>la paix en soi</em></h2>
         <div class="animated-line"></div>
       </div>
       <div class="r d1">
-        <p class="intro-body">La kinésiologie est une pratique professionnelle destinee a favoriser un etat d'equilibre physique, mental et emotionnel. Elle aide a liberer les tensions emotionnelles et physiques pour se sentir plus en paix avec soi, se reconnecter a son plein potentiel et faire des choix pour trouver un equilibre dans sa vie.</p>
-        <p class="intro-body">Le mot kinésiologie signifie "étude du mouvement" - un mouvement qui emmène vers le changement. Lors des séances, la personne pose une intention, un objectif : comment veut-elle se sentir, vers quoi souhaite-t-elle aller ? C'est grâce au test musculaire que le corps est interrogé, pour identifier les blocages présents et passés et s'en libérer.</p>
-        <p class="intro-body" style="font-size:.82rem;font-style:italic;color:var(--mid)">La kinésiologie ne peut se substituer a la medecine allopathique, ces approches sont complementaires. Le test musculaire ne peut pas servir a poser un diagnostic.</p>
+        <p class="intro-body">La kinesiologie est une pratique professionnelle destinee a favoriser un etat d'equilibre physique, mental et emotionnel. Elle aide a liberer les tensions emotionnelles et physiques pour se sentir plus en paix avec soi, se reconnecter a son plein potentiel et faire des choix pour trouver un equilibre dans sa vie.</p>
+        <p class="intro-body">Le mot kinesiologie signifie "etude du mouvement" - un mouvement qui emmene vers le changement. Lors des seances, la personne pose une intention, un objectif : comment veut-elle se sentir, vers quoi souhaite-t-elle aller ? C'est grace au test musculaire que le corps est interroge, pour identifier les blocages presents et passes et s'en liberer.</p>
+        <p class="intro-body" style="font-size:.82rem;font-style:italic;color:var(--mid)">La kinesiologie ne peut se substituer a la medecine allopathique, ces approches sont complementaires. Le test musculaire ne peut pas servir a poser un diagnostic.</p>
         <div class="pillars">
           <div class="pillar"><div class="pillar-icon">
   <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="18" cy="18" r="17" stroke="#E8C84A" stroke-width="1"/>
-    <path d="M12 18c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#E8C84A" stroke-width="1.2" stroke-linecap="round"/>
-    <path d="M14 21c0-2.2 1.8-4 4-4s4 1.8 4 4" stroke="#8B7355" stroke-width="1.2" stroke-linecap="round"/>
-    <circle cx="18" cy="23" r="1.5" fill="#8B7355" opacity=".6"/>
+    <circle cx="18" cy="18" r="17" stroke="#6B8F6E" stroke-width="1"/>
+    <path d="M12 18c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#6B8F6E" stroke-width="1.2" stroke-linecap="round"/>
+    <path d="M14 21c0-2.2 1.8-4 4-4s4 1.8 4 4" stroke="#9C7A52" stroke-width="1.2" stroke-linecap="round"/>
+    <circle cx="18" cy="23" r="1.5" fill="#9C7A52" opacity=".6"/>
   </svg>
-</div><h3>Corps et émotions</h3><p>Libérer les mémoires émotionnelles stockées dans le corps pour retrouver un équilibre profond.</p></div>
+</div><h3>Corps et emotions</h3><p>Liberer les memoires emotionnelles stockees dans le corps pour retrouver un equilibre profond.</p></div>
           <div class="pillar"><div class="pillar-icon">
   <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="18" cy="18" r="17" stroke="#E8C84A" stroke-width="1"/>
-    <path d="M18 10 C18 10 13 15 18 18 C23 21 18 26 18 26" stroke="#E8C84A" stroke-width="1.3" stroke-linecap="round"/>
-    <circle cx="18" cy="10" r="1.5" fill="#E8C84A" opacity=".5"/>
-    <circle cx="18" cy="26" r="1.5" fill="#8B7355" opacity=".5"/>
+    <circle cx="18" cy="18" r="17" stroke="#6B8F6E" stroke-width="1"/>
+    <path d="M18 10 C18 10 13 15 18 18 C23 21 18 26 18 26" stroke="#6B8F6E" stroke-width="1.3" stroke-linecap="round"/>
+    <circle cx="18" cy="10" r="1.5" fill="#6B8F6E" opacity=".5"/>
+    <circle cx="18" cy="26" r="1.5" fill="#9C7A52" opacity=".5"/>
   </svg>
-</div><h3>Énergie et vitalité</h3><p>Rééquilibrer les flux énergétiques pour retrouver votre ancrage et votre élan de vie.</p></div>
+</div><h3>Energie et vitalite</h3><p>Reequilibrer les flux energetiques pour retrouver votre ancrage et votre elan de vie.</p></div>
           <div class="pillar"><div class="pillar-icon">
   <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="18" cy="18" r="17" stroke="#E8C84A" stroke-width="1"/>
-    <circle cx="18" cy="18" r="10" stroke="#E8C84A" stroke-width="1" opacity=".5"/>
-    <circle cx="18" cy="18" r="5"  stroke="#8B7355" stroke-width="1.2" opacity=".7"/>
-    <circle cx="18" cy="18" r="2"  fill="#8B7355"/>
+    <circle cx="18" cy="18" r="17" stroke="#6B8F6E" stroke-width="1"/>
+    <circle cx="18" cy="18" r="10" stroke="#6B8F6E" stroke-width="1" opacity=".5"/>
+    <circle cx="18" cy="18" r="5"  stroke="#9C7A52" stroke-width="1.2" opacity=".7"/>
+    <circle cx="18" cy="18" r="2"  fill="#9C7A52"/>
   </svg>
-</div><h3>Objectifs et clarté</h3><p>Dépasser les blocages qui empêchent d'avancer et se connaître davantage.</p></div>
+</div><h3>Objectifs et clarte</h3><p>Depasser les blocages qui empechent d'avancer et se connaitre davantage.</p></div>
         </div>
       </div>
     </div>
@@ -596,8 +597,8 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
 <section class="pourqui">
   <div class="wrap">
     <div style="text-align:center;max-width:640px;margin:0 auto 3rem">
-      <span class="lbl r">La kinésiologie pour tous</span>
-      <h2 class="h2 r">Bébés, enfants, <em>adultes</em></h2>
+      <span class="lbl r">La kinesiologie pour tous</span>
+      <h2 class="h2 r">Bebes, enfants, <em>adultes</em></h2>
       <div class="animated-line r" style="margin:.9rem auto 1.5rem"></div>
     </div>
     <div class="pourqui-grid">
@@ -605,28 +606,28 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
         <p class="prob-h r">Pour quoi consulter ?</p>
         <ul class="pourqui-list r">
           <li>Peurs, phobies</li>
-          <li>Stress, anxiété, angoisse</li>
-          <li>Libération et équilibration des émotions</li>
+          <li>Stress, anxiete, angoisse</li>
+          <li>Liberation et equilibration des emotions</li>
           <li>Troubles du sommeil</li>
-          <li>Décrochage scolaire</li>
-          <li>Difficultés relationnelles</li>
+          <li>Decrochage scolaire</li>
+          <li>Difficultes relationnelles</li>
           <li>Deuil</li>
           <li>(Re)trouver du sens</li>
           <li>(Re)trouver sa place</li>
           <li>Energie</li>
-          <li>Mieux se connaître</li>
+          <li>Mieux se connaitre</li>
         </ul>
       </div>
       <div>
-        <p class="prob-h r">Techniques utilisées</p>
+        <p class="prob-h r">Techniques utilisees</p>
         <div class="techniques-list r">
-          <span class="tech-tag">Santé par le toucher</span>
-          <span class="tech-tag">Kinésiologie Harmonique</span>
-          <span class="tech-tag">Kinésiologie Périnatale</span>
+          <span class="tech-tag">Sante par le toucher</span>
+          <span class="tech-tag">Kinesiologie Harmonique</span>
+          <span class="tech-tag">Kinesiologie Perinatale</span>
           <span class="tech-tag">3 concepts en 1</span>
-          <span class="tech-tag">Éducation Kinesthésique</span>
+          <span class="tech-tag">Education Kinesthesique</span>
         </div>
-        <p style="font-size:.82rem;color:var(--mid);margin-top:1.5rem;line-height:1.7" class="r d1">J'utilise également l'<strong style="color:var(--ink)">intégration des réflexes archaïques</strong> de manière complémentaire à la kinésiologie, ainsi que l'<strong style="color:var(--ink)">écoute active</strong> et la <strong style="color:var(--ink)">communication bienveillante</strong> (CNV - Marshall Rosenberg).</p>
+        <p style="font-size:.82rem;color:var(--mid);margin-top:1.5rem;line-height:1.7" class="r d1">J'utilise egalement l'<strong style="color:var(--ink)">integration des reflexes archaiques</strong> de maniere complementaire a la kinesiologie, ainsi que l'<strong style="color:var(--ink)">ecoute active</strong> et la <strong style="color:var(--ink)">communication bienveillante</strong> (CNV - Marshall Rosenberg).</p>
       </div>
     </div>
   </div>
@@ -637,37 +638,37 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
   <div class="wrap">
     <div class="seances-grid">
       <div>
-        <span class="lbl r">Séances individuelles</span>
+        <span class="lbl r">Seances individuelles</span>
         <h2 class="h2 r">Un accompagnement<br><em>sur mesure</em></h2>
         <div class="animated-line r"></div>
         <div class="steps r">
-          <p class="steps-h">Le déroulement d'une séance</p>
-          <div class="step"><div class="step-n">1</div><div class="step-t"><h4>L'accueil et l'intention</h4><p>Nous définissons ensemble ce que vous souhaitez travailler : comment voulez-vous vous sentir, vers quoi souhaitez-vous aller ?</p></div></div>
-          <div class="step"><div class="step-n">2</div><div class="step-t"><h4>Le test musculaire</h4><p>Outil de dialogue avec le système nerveux pour identifier les déséquilibres présents et passés.</p></div></div>
-          <div class="step"><div class="step-n">3</div><div class="step-t"><h4>Les corrections</h4><p>Techniques douces (Santé par le toucher, Kinésiologie Harmonique, 3 concepts en 1...) pour liberer les blocages.</p></div></div>
-          <div class="step"><div class="step-n">4</div><div class="step-t"><h4>L'intégration</h4><p>Un temps pour accueillir les changements et repartir avec des pistes concrètes.</p></div></div>
+          <p class="steps-h">Le deroulement d'une seance</p>
+          <div class="step"><div class="step-n">1</div><div class="step-t"><h4>L'accueil et l'intention</h4><p>Nous definissons ensemble ce que vous souhaitez travailler : comment voulez-vous vous sentir, vers quoi souhaitez-vous aller ?</p></div></div>
+          <div class="step"><div class="step-n">2</div><div class="step-t"><h4>Le test musculaire</h4><p>Outil de dialogue avec le systeme nerveux pour identifier les desequilibres presents et passes.</p></div></div>
+          <div class="step"><div class="step-n">3</div><div class="step-t"><h4>Les corrections</h4><p>Techniques douces (Sante par le toucher, Kinesiologie Harmonique, 3 concepts en 1...) pour liberer les blocages.</p></div></div>
+          <div class="step"><div class="step-n">4</div><div class="step-t"><h4>L'integration</h4><p>Un temps pour accueillir les changements et repartir avec des pistes concretes.</p></div></div>
         </div>
-        <div class="r" style="margin-top:2rem"><a href="tel:+33757474336" class="btn btn-p">Appeler pour réserver</a></div>
+        <div class="r" style="margin-top:2rem"><a href="#contact" class="btn btn-p">Reserver une seance</a></div>
       </div>
       <aside style="position:sticky;top:80px">
         <div class="tarif r">
           <h3>Tarifs</h3>
-          <div class="tarif-row"><span class="lbl" style="margin:0">Séance adulte (1h15)</span><span class="price">60 &#8364;</span></div>
-          <div class="tarif-row"><span class="lbl" style="margin:0">Séance enfant (1h)</span><span class="price">60 &#8364;</span></div>
-          <p class="tarif-note">Les séances enfants durent moins longtemps mais sont au même prix car elles demandent plus d'énergie : je m'occupe de votre enfant, de vous et de vos émotions.</p>
-          <p class="tarif-note">Règlement en chèque ou espèces. Merci de préparer votre mode de paiement.</p>
-          <p class="tarif-note">Non remboursé Sécurité sociale. Partiellement pris en charge par certaines mutuelles.</p>
+          <div class="tarif-row"><span class="lbl" style="margin:0">Seance adulte (1h15)</span><span class="price">60 &#8364;</span></div>
+          <div class="tarif-row"><span class="lbl" style="margin:0">Seance enfant (1h)</span><span class="price">60 &#8364;</span></div>
+          <p class="tarif-note">Les seances enfants durent moins longtemps mais sont au meme prix car elles demandent plus d'energie : je m'occupe de votre enfant, de vous et de vos emotions.</p>
+          <p class="tarif-note">Reglement en cheque ou especes. Merci de preparer votre mode de paiement.</p>
+          <p class="tarif-note">Non rembourse Securite sociale. Partiellement pris en charge par certaines mutuelles.</p>
         </div>
         <div class="info-box r">
           <h4>Informations pratiques</h4>
-          <div class="info-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>2 rue Joseph Lafranque<br>65200 Bagnères-de-Bigorre</span></div>
+          <div class="info-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>2 rue Joseph Lafranque<br>65200 Bagneres-de-Bigorre</span></div>
           <div class="info-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2"/><path d="M9 3h6"/><path d="M12 3v2"/></svg><span>Adulte : 1h15 - Enfant : 1h</span></div>
-          <div class="info-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Lun 9h-19h - Mer 9h-19h - Jeu 9h-19h</span></div>
-          <div class="info-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg><span>Annulation : 48h avant le RDV<br>sinon la séance est due</span></div>
+          <div class="info-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Lun 09h30-20h - Mer 09h-20h<br>Jeu 10h-19h</span></div>
+          <div class="info-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg><span>Annulation : 48h avant le RDV<br>sinon la seance est due</span></div>
         </div>
         <div class="enfants-note r" style="margin-top:1.25rem">
-          <strong>Séances enfants</strong><br>
-          Pour la première séance, il est souhaitable que les 2 parents soient présents. Les autres enfants de la fratrie ne sont pas admis et ne peuvent rester en salle d'attente.
+          <strong>Seances enfants</strong><br>
+          Pour la premiere seance, il est souhaitable que les 2 parents soient presents. Les autres enfants de la fratrie ne sont pas admis et ne peuvent rester en salle d'attente.
         </div>
       </aside>
     </div>
@@ -682,8 +683,8 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
         <span class="lbl r">Soin rituel</span>
         <h2 class="h2 r">Rebozo</h2>
         <div class="animated-line r"></div>
-        <p class="bio r">Les soins rituels rebozo se font à tout moment de la vie, quand vous en ressentez le besoin : pour vous célébrer, vous soutenir, en post-partum, pour marquer une étape ou en fermer une pour s'ouvrir à du nouveau.</p>
-        <p class="bio r">Un soin à 4 mains, au domicile de la personne, dans un cadre enveloppant et bienveillant.</p>
+        <p class="bio r">Les soins rituels rebozo se font a tout moment de la vie, quand vous en ressentez le besoin : pour vous celebrer, vous soutenir, en post-partum, pour marquer une etape ou en fermer une pour s'ouvrir a du nouveau.</p>
+        <p class="bio r">Un soin a 4 mains, au domicile de la personne, dans un cadre enveloppant et bienveillant.</p>
       </div>
       <div>
         <div class="r">
@@ -692,13 +693,13 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
             <div class="rebozo-detail">Hammam</div>
             <div class="rebozo-detail">Serrage (technique traditionnelle mexicaine)</div>
             <div class="rebozo-detail">Au domicile de la personne</div>
-            <div class="rebozo-detail">Soin à 4 mains</div>
+            <div class="rebozo-detail">Soin a 4 mains</div>
           </div>
           <div class="rebozo-price">
             <span class="price">200 &#8364;</span>
-            <p>Soin rituel complet à domicile</p>
+            <p>Soin rituel complet a domicile</p>
           </div>
-          <div style="margin-top:1.5rem;text-align:center"><a href="https://rebozo-pyrenees.fr/" target="_blank" rel="noopener" class="btn btn-e">Découvrir sur rebozo-pyrenees.fr</a></div>
+          <div style="margin-top:1.5rem;text-align:center"><a href="#contact" class="btn btn-e">Reserver un soin rebozo</a></div>
         </div>
       </div>
     </div>
@@ -711,29 +712,29 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
     <div class="perinatal-grid">
       <div>
         <span class="lbl r">Accompagnement</span>
-        <h2 class="h2 r">Périnatalité</h2>
+        <h2 class="h2 r">Perinatalite</h2>
         <div class="animated-line r"></div>
-        <p class="bio r">La période autour de l'arrivée d'un enfant est toute particulière, pleine de chamboulements pour soi et pour le couple. Se faire accompagner avec la kinésiologie peut vous aider à :</p>
+        <p class="bio r">La periode autour de l'arrivee d'un enfant est toute particuliere, pleine de chamboulements pour soi et pour le couple. Se faire accompagner avec la kinesiologie peut vous aider a :</p>
         <ul class="peri-list r">
-          <li>Vous préparer à devenir parent</li>
-          <li>Vous préparer à l'accouchement</li>
-          <li>Se défaire de certains schémas familiaux pour vivre cette période à votre manière</li>
-          <li>Se libérer de peurs (voir son corps se transformer, être un bon parent, accoucher, l'hôpital...)</li>
+          <li>Vous preparer a devenir parent</li>
+          <li>Vous preparer a l'accouchement</li>
+          <li>Se defaire de certains schemas familiaux pour vivre cette periode a votre maniere</li>
+          <li>Se liberer de peurs (voir son corps se transformer, etre un bon parent, accoucher, l'hopital...)</li>
         </ul>
       </div>
       <div>
         <div class="peri-other r">
-          <h4>Autres thématiques abordées</h4>
+          <h4>Autres thematiques abordees</h4>
           <ul class="peri-list">
             <li>IVG</li>
             <li>Fausses couches</li>
             <li>Accouchement difficile</li>
-            <li>Difficultés à concevoir un enfant</li>
-            <li>Deuil périnatal</li>
+            <li>Difficultes a concevoir un enfant</li>
+            <li>Deuil perinatal</li>
           </ul>
         </div>
-        <p class="peri-disclaimer r">La kinésiologie ne se substitue pas au suivi medical durant la grossesse, l'accouchement et apres.</p>
-        <div style="margin-top:1.5rem" class="r"><a href="tel:+33757474336" class="btn btn-p">Appeler pour en parler</a></div>
+        <p class="peri-disclaimer r">La kinesiologie ne se substitue pas au suivi medical durant la grossesse, l'accouchement et apres.</p>
+        <div style="margin-top:1.5rem" class="r"><a href="#contact" class="btn btn-p">Me contacter</a></div>
       </div>
     </div>
   </div>
@@ -746,8 +747,8 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
       <span class="lbl r">Ateliers et formations</span>
       <h2 class="h2 r">Interventions <em>sur mesure</em></h2>
       <div class="animated-line r" style="margin:.9rem auto 1.5rem"></div>
-      <p class="ateliers-body r">Je propose des ateliers et des formations sur demande à destination des entreprises, administrations et associations. Chaque intervention est conçue sur mesure selon vos besoins.</p>
-      <div class="r"><a href="tel:+33757474336" class="btn btn-o">Appeler pour un devis</a></div>
+      <p class="ateliers-body r">Je propose des ateliers et des formations sur demande a destination des entreprises, administrations et associations. Chaque intervention est concue sur mesure selon vos besoins.</p>
+      <div class="r"><a href="#contact" class="btn btn-o">Demander un devis</a></div>
     </div>
   </div>
 </section>
@@ -763,51 +764,51 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
     </div>
     <div class="sup-cards">
       <div class="sup-card r"><div class="card-ico">
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C9A82C" stroke-width="1.2" stroke-linecap="round">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3E5E42" stroke-width="1.2" stroke-linecap="round">
     <circle cx="10" cy="10" r="7"/>
     <line x1="10" y1="7" x2="10" y2="13"/>
     <line x1="7" y1="10" x2="13" y2="10"/>
     <line x1="15.5" y1="15.5" x2="21" y2="21"/>
   </svg>
-</div><h3>Supervision de cas cliniques</h3><p>Analysons ensemble vos séances, vos doutes, vos réussites. Un espace professionnel pour affiner votre regard de praticien.</p><p class="card-det">Individuel ou groupe - Présentiel et visio</p></div>
+</div><h3>Supervision de cas cliniques</h3><p>Analysons ensemble vos seances, vos doutes, vos reussites. Un espace professionnel pour affiner votre regard de praticien.</p><p class="card-det">Individuel ou groupe - Presentiel et visio</p></div>
       <div class="sup-card r d1"><div class="card-ico">
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C9A82C" stroke-width="1.2" stroke-linecap="round">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3E5E42" stroke-width="1.2" stroke-linecap="round">
     <circle cx="12" cy="12" r="10"/>
-    <polygon points="12,5 14.5,12 12,10.5 9.5,12" fill="#8B7355" opacity=".7" stroke="none"/>
-    <polygon points="12,19 9.5,12 12,13.5 14.5,12" fill="#E8C84A" opacity=".5" stroke="none"/>
-    <circle cx="12" cy="12" r="1.2" fill="#C9A82C"/>
+    <polygon points="12,5 14.5,12 12,10.5 9.5,12" fill="#9C7A52" opacity=".7" stroke="none"/>
+    <polygon points="12,19 9.5,12 12,13.5 14.5,12" fill="#6B8F6E" opacity=".5" stroke="none"/>
+    <circle cx="12" cy="12" r="1.2" fill="#3E5E42"/>
   </svg>
-</div><h3>Accompagnement à l'installation</h3><p>Cabinet, tarifs, communication, posture professionnelle... Un soutien global pour démarrer sereinement votre activité.</p><p class="card-det">Individuel - Visio ou présentiel 65</p></div>
+</div><h3>Accompagnement a l'installation</h3><p>Cabinet, tarifs, communication, posture professionnelle... Un soutien global pour demarrer sereinement votre activite.</p><p class="card-det">Individuel - Visio ou presentiel 65</p></div>
       <div class="sup-card r d2"><div class="card-ico">
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C9A82C" stroke-width="1.2" stroke-linecap="round">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3E5E42" stroke-width="1.2" stroke-linecap="round">
     <circle cx="9"  cy="12" r="5" opacity=".8"/>
     <circle cx="15" cy="12" r="5" opacity=".5"/>
-    <path d="M12 8.5 C13.2 10 13.2 14 12 15.5" stroke="#8B7355" stroke-width="1" opacity=".7"/>
+    <path d="M12 8.5 C13.2 10 13.2 14 12 15.5" stroke="#9C7A52" stroke-width="1" opacity=".7"/>
   </svg>
-</div><h3>Groupes inter-praticiens</h3><p>Sessions en petit groupe pour croiser les regards et rompre l'isolement du praticien libéral.</p><p class="card-det">8 praticiens max - 2h - Visio</p></div>
+</div><h3>Groupes inter-praticiens</h3><p>Sessions en petit groupe pour croiser les regards et rompre l'isolement du praticien liberal.</p><p class="card-det">8 praticiens max - 2h - Visio</p></div>
     </div>
     <div class="sup-for r">
       <div>
-        <span class="lbl">À qui s'adresse cette offre ?</span>
-        <h2 class="h2">Une supervision<br><em>ouverte à tous</em></h2>
+        <span class="lbl">A qui s'adresse cette offre ?</span>
+        <h2 class="h2">Une supervision<br><em>ouverte a tous</em></h2>
         <div class="animated-line"></div>
-        <p class="sup-for-desc">Quelle que soit votre école de formation - Touch for Health, TIOC, Brain Gym, SYNAPKiN, IEK ou autre - cette supervision est accessible sans appartenance requise.</p>
+        <p class="sup-for-desc">Quelle que soit votre ecole de formation - Touch for Health, TIOC, Brain Gym, SYNAPKiN, IEK ou autre - cette supervision est accessible sans appartenance requise.</p>
         <ul class="for-list">
-          <li class="for-item"><span class="check">&#10003;</span>Praticiens fraîchement diplômés en phase d'installation</li>
-          <li class="for-item"><span class="check">&#10003;</span>Kinésiologues souhaitant approfondir leur pratique</li>
-          <li class="for-item"><span class="check">&#10003;</span>Professionnels de santé intégrant la kinésiologie</li>
-          <li class="for-item"><span class="check">&#10003;</span>France, Belgique, Suisse, Québec - en visio</li>
+          <li class="for-item"><span class="check">&#10003;</span>Praticiens fraichement diplomes en phase d'installation</li>
+          <li class="for-item"><span class="check">&#10003;</span>Kinesiologues souhaitant approfondir leur pratique</li>
+          <li class="for-item"><span class="check">&#10003;</span>Professionnels de sante integrant la kinesiologie</li>
+          <li class="for-item"><span class="check">&#10003;</span>France, Belgique, Suisse, Quebec - en visio</li>
         </ul>
       </div>
       <div>
         <div class="sup-pricing">
           <h4>Formules</h4>
-          <div class="sup-row"><span class="l">Séance individuelle (1h)</span><span class="v">À définir &#8364;</span></div>
-          <div class="sup-row"><span class="l">Groupe (8 pers. x 2h)</span><span class="v">À définir &#8364;/pers.</span></div>
-          <div class="sup-row"><span class="l">Forfait suivi</span><span class="v">À définir &#8364;</span></div>
-          <p class="sup-note">Session découverte gratuite de 30 min sur demande</p>
+          <div class="sup-row"><span class="l">Seance individuelle (1h)</span><span class="v">A definir &#8364;</span></div>
+          <div class="sup-row"><span class="l">Groupe (8 pers. x 2h)</span><span class="v">A definir &#8364;/pers.</span></div>
+          <div class="sup-row"><span class="l">Forfait suivi</span><span class="v">A definir &#8364;</span></div>
+          <p class="sup-note">Session decouverte gratuite de 30 min sur demande</p>
         </div>
-        <a href="tel:+33757474336" class="btn btn-e" style="display:block;text-align:center">Appeler pour une session découverte</a>
+        <a href="#contact" class="btn btn-e" style="display:block;text-align:center">Me contacter pour une session decouverte</a>
       </div>
     </div>
   </div>
@@ -819,33 +820,33 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
     <div class="apropos-grid">
       <div class="photo-sticky">
         <div class="photo-frame">
-          <img src="portrait.webp" alt="Aline Haelberg, kinésiologue à Bagnères-de-Bigorre">
+          <img src="portrait.webp" alt="Aline Haelberg, kinesiologue a Bagneres-de-Bigorre">
         </div>
-        <p class="photo-cap">Aline Haelberg - Kinésiologue certifiée CFK<br>Bagnères-de-Bigorre (65)</p>
+        <p class="photo-cap">Aline Haelberg - Kinesiologue certifiee CFK<br>Bagneres-de-Bigorre (65)</p>
       </div>
       <div>
-        <span class="lbl r">À propos d'Aline</span>
-        <h2 class="h2 r">Du violon<br><em>à la kinésiologie</em></h2>
+        <span class="lbl r">A propos d'Aline</span>
+        <h2 class="h2 r">Du violon<br><em>a la kinesiologie</em></h2>
         <div class="animated-line r"></div>
-        <p class="bio r">Formée au violon classique et jazz, diplômée d'État dans l'animation et la coordination socioculturelle, j'ai été intermittente du spectacle pendant plus de dix ans. Jusqu'au jour où mon annulaire gauche se bloque - une dystonie de fonction - m'empêchant de jouer du violon.</p>
-        <p class="bio r">Cet événement a marqué un tournant dans ma vie et m'a amenée à me questionner sur le lien entre notre corps, nos émotions et notre esprit. J'ai commencé un travail sur moi pour mieux me comprendre : la pression liée à la performance scénique, la peur de ne pas être à la hauteur...</p>
-        <p class="bio r">C'est ainsi que j'ai découvert la kinésiologie. Je me suis formée et installée à Bagnères-de-Bigorre en 2020. Aujourd'hui, cette pratique riche m'accompagne et me permet de vous accompagner. Je continue à me former - intégration des réflexes archaïques, communication non violente, écoute active - portée par un grand intérêt pour l'humain et une curiosité qui ne s'arrête pas.</p>
+        <p class="bio r">Formee au violon classique et jazz, diplomee d'Etat dans l'animation et la coordination socioculturelle, j'ai ete intermittente du spectacle pendant plus de dix ans. Jusqu'au jour ou mon annulaire gauche se bloque - une dystonie de fonction - m'empechant de jouer du violon.</p>
+        <p class="bio r">Cet evenement a marque un tournant dans ma vie et m'a amenee a me questionner sur le lien entre notre corps, nos emotions et notre esprit. J'ai commence un travail sur moi pour mieux me comprendre : la pression liee a la performance scenique, la peur de ne pas etre a la hauteur...</p>
+        <p class="bio r">C'est ainsi que j'ai decouvert la kinesiologie. Je me suis formee et installee a Bagneres-de-Bigorre en 2020. Aujourd'hui, cette pratique riche m'accompagne et me permet de vous accompagner. Je continue a me former - integration des reflexes archaiques, communication non violente, ecoute active - portee par un grand interet pour l'humain et une curiosite qui ne s'arrete pas.</p>
         <div class="quote-box r">
-          <p>Je m'engage à être à l'écoute de votre rythme, avec toute ma sensibilité, à travailler en toute transparence et dans le respect de ce que vous vivez. Je suis là pour accompagner vos transformations, vos élans, vos envies. Je ne vais ni vous conseiller ni vous orienter. Vous êtes le maître de votre travail, je suis là avec ma posture et mes outils.</p>
+          <p>Je m'engage a etre a l'ecoute de votre rythme, avec toute ma sensibilite, a travailler en toute transparence et dans le respect de ce que vous vivez. Je suis la pour accompagner vos transformations, vos elans, vos envies. Je ne vais ni vous conseiller ni vous orienter. Vous etes le maitre de votre travail, je suis la avec ma posture et mes outils.</p>
         </div>
         <div class="formations r" style="margin-top:2.5rem">
           <h3>Parcours et formations</h3>
           <div class="form-item">
             <span class="yr">2020</span>
-            <div><h4>Installation à Bagnères-de-Bigorre</h4><p>Début de l'activité de kinésiologue en cabinet</p></div>
+            <div><h4>Installation a Bagneres-de-Bigorre</h4><p>Debut de l'activite de kinesiologue en cabinet</p></div>
           </div>
           <div class="form-item">
             <span class="yr">3 ans</span>
-            <div><h4>Certification CFK en kinésiologie</h4><p>Santé par le toucher - Kinésiologie Harmonique - Perinatale - 3 concepts en 1 - Éducation Kinesthésique</p></div>
+            <div><h4>Certification CFK en kinesiologie</h4><p>Sante par le toucher - Kinesiologie Harmonique - Perinatale - 3 concepts en 1 - Education Kinesthesique</p></div>
           </div>
           <div class="form-item">
             <span class="yr">Continu</span>
-            <div><h4>Formations complémentaires</h4><p>Intégration des réflexes archaïques - Communication Non Violente (Marshall Rosenberg) - Écoute active</p></div>
+            <div><h4>Formations complementaires</h4><p>Integration des reflexes archaiques - Communication Non Violente (Marshall Rosenberg) - Ecoute active</p></div>
           </div>
           <div class="form-item">
             <span class="yr">10+ ans</span>
@@ -853,7 +854,7 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
           </div>
           <div class="form-item">
             <span class="yr">DE</span>
-            <div><h4>Diplôme d'État</h4><p>Animation et coordination socioculturelle</p></div>
+            <div><h4>Diplome d'Etat</h4><p>Animation et coordination socioculturelle</p></div>
           </div>
         </div>
       </div>
@@ -867,24 +868,50 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
     <div class="contact-grid">
       <div>
         <span class="lbl r">Contact et rendez-vous</span>
-        <h2 class="h2 r">Prêt(e) à faire<br><em>le premier pas ?</em></h2>
+        <h2 class="h2 r">Pret(e) a faire<br><em>le premier pas ?</em></h2>
         <div class="animated-line r"></div>
-        <p class="contact-body r">Que ce soit pour une seance en cabinet a Bagnères-de-Bigorre, un soin rebozo a domicile, un accompagnement perinatal ou pour en savoir plus sur la supervision, contactez-moi. Je reponds sous 48h.</p>
+        <p class="contact-body r">Que ce soit pour une seance en cabinet a Bagneres-de-Bigorre, un soin rebozo a domicile, un accompagnement perinatal ou pour en savoir plus sur la supervision, contactez-moi. Je reponds sous 48h.</p>
         <div class="contact-details">
-          <div class="c-detail r"><div class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="c-lbl">Cabinet</div><div class="c-val">2 rue Joseph Lafranque, 65200 Bagnères-de-Bigorre</div></div></div>
-          <div class="c-detail r"><div class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.98-.98a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div><div class="c-lbl">Téléphone</div><div class="c-val"><a href="tel:+33757474336">07 57 47 43 36</a></div></div></div>
-
-          <div class="c-detail r"><div class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div><div class="c-lbl">Horaires</div><div class="c-val">Lun 9h-19h - Mer 9h-19h - Jeu 9h-19h</div></div></div>
+          <div class="c-detail r"><div class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="c-lbl">Cabinet</div><div class="c-val">2 rue Joseph Lafranque, 65200 Bagneres-de-Bigorre</div></div></div>
+          <div class="c-detail r"><div class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.98-.98a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div><div class="c-lbl">Telephone</div><div class="c-val"><a href="tel:+33757474336">07 57 47 43 36</a></div></div></div>
+          <div class="c-detail r"><div class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><div class="c-lbl">Email</div><div class="c-val"><span id="cmail"></span></div></div></div>
+          <div class="c-detail r"><div class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div><div class="c-lbl">Horaires</div><div class="c-val">Lun 09h30-20h - Mer 09h-20h - Jeu 10h-19h</div></div></div>
         </div>
       </div>
-      <div class="form-box r" style="text-align:center;padding:3rem 2rem">
-        <h3 style="font-size:1.5rem;margin-bottom:1rem">Prenez rendez-vous par téléphone</h3>
-        <p style="font-size:.9rem;color:var(--mid);line-height:1.7;margin-bottom:2rem">Je prends les rendez-vous uniquement par téléphone.<br>N'hésitez pas à m'appeler ou à me laisser un message vocal.</p>
-        <a href="tel:+33757474336" class="btn btn-p" style="font-size:1.1rem;padding:1.1rem 2.5rem;display:inline-flex;align-items:center;gap:.6rem">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.98-.98a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          07 57 47 43 36
-        </a>
-        <p style="font-size:.78rem;color:var(--mid);margin-top:1.5rem">Lundi, mercredi et jeudi de 9h à 19h</p>
+      <div class="form-box r">
+        <h3>Envoyez-moi un message</h3>
+        <p class="form-sub">Je vous reponds personnellement sous 48h.</p>
+        <form id="contact-form" action="contact.php" method="POST">
+          <div class="form-row">
+            <div class="fg"><label>Prenom *</label><input type="text" name="prenom" required placeholder="Votre prenom"></div>
+            <div class="fg"><label>Nom *</label><input type="text" name="nom" required placeholder="Votre nom"></div>
+          </div>
+          <div class="fg"><label>Email *</label><input type="email" name="email" required placeholder="votre@email.fr"></div>
+          <div class="fg"><label>Telephone</label><input type="tel" name="telephone" placeholder="06 xx xx xx xx"></div>
+          <div class="fg"><label>Objet</label>
+            <select name="sujet">
+              <option value="">-- Choisir --</option>
+              <option>Seance en cabinet (adulte)</option>
+              <option>Seance en cabinet (enfant)</option>
+              <option>Soin rituel rebozo</option>
+              <option>Accompagnement perinatal</option>
+              <option>Supervision individuelle</option>
+              <option>Supervision en groupe</option>
+              <option>Atelier ou formation</option>
+              <option>Renseignements generaux</option>
+            </select>
+          </div>
+          <div class="fg"><label>Message *</label><textarea name="message" required placeholder="Decrivez brievement ce qui vous amene..."></textarea></div>
+          <!-- Honeypot anti-spam -->
+          <div style="display:none" aria-hidden="true">
+            <input type="text" name="website" tabindex="-1" autocomplete="off">
+          </div>
+          <button type="submit" class="btn btn-p" style="width:100%;margin-top:.5rem">Envoyer mon message</button>
+        </form>
+        <div id="form-success" style="display:none;padding:2rem;text-align:center">
+          <p style="font-family:var(--serif);font-size:1.2rem;color:var(--deep);margin-bottom:.5rem">Merci !</p>
+          <p style="font-size:.88rem;color:var(--mid)">Votre message a bien ete envoye. Je vous repondrai sous 48h.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -897,7 +924,7 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
       <span class="lbl">Nous trouver</span>
       <h2 class="h2">Le cabinet</h2>
       <div class="bar" style="width:44px;height:2px;background:var(--sage);margin:1rem 0 .5rem"></div>
-      <p style="font-size:.85rem;color:var(--mid)">2 rue Joseph Lafranque - 65200 Bagnères-de-Bigorre</p>
+      <p style="font-size:.85rem;color:var(--mid)">2 rue Joseph Lafranque - 65200 Bagneres-de-Bigorre</p>
     </div>
   </div>
   <div class="r" style="width:100%;height:400px;overflow:hidden">
@@ -909,7 +936,7 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
       allowfullscreen=""
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
-      title="Cabinet Aline Haelberg - Bagnères-de-Bigorre">
+      title="Cabinet Aline Haelberg - Bagneres-de-Bigorre">
     </iframe>
   </div>
 </section>
@@ -920,27 +947,27 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
     <div class="foot-grid">
       <div>
         <div class="f-name">Aline Haelberg</div>
-        <div class="f-tag">Kinésiologue certifiée CFK - Bagnères-de-Bigorre</div>
-        <p class="f-desc">Séances de kinésiologie adultes et enfants - Soin rituel rebozo - Accompagnement périnatal<br>Supervision de kinésiologues - France, Belgique, Suisse, Québec.</p>
+        <div class="f-tag">Kinesiologue certifiee CFK - Bagneres-de-Bigorre</div>
+        <p class="f-desc">Seances de kinesiologie adultes et enfants - Soin rituel rebozo - Accompagnement perinatal<br>Supervision de kinesiologues - France, Belgique, Suisse, Quebec.</p>
       </div>
       <div class="fc"><h4>Navigation</h4><ul>
-        <li><a href="#kinesiologie">La kinésiologie</a></li>
-        <li><a href="#seances">Séances</a></li>
+        <li><a href="#kinesiologie">La kinesiologie</a></li>
+        <li><a href="#seances">Seances</a></li>
         <li><a href="#rebozo">Soin rebozo</a></li>
-        <li><a href="#perinatal">Périnatalité</a></li>
+        <li><a href="#perinatal">Perinatalite</a></li>
         <li><a href="#supervision">Supervision</a></li>
-        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#apropos">A propos</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul></div>
       <div class="fc"><h4>Informations</h4><ul>
-        <li><a href="#mentions-legales" onclick="document.getElementById('modal-mentions').style.display='flex'">Mentions légales</a></li>
-        <li><a href="#politique-confidentialite" onclick="document.getElementById('modal-confidentialite').style.display='flex'">Politique de confidentialité</a></li>
+        <li><a href="#mentions-legales" onclick="document.getElementById('modal-mentions').style.display='flex'">Mentions legales</a></li>
+        <li><a href="#politique-confidentialite" onclick="document.getElementById('modal-confidentialite').style.display='flex'">Politique de confidentialite</a></li>
       </ul>
-      <p style="margin-top:1rem;font-size:.68rem;color:rgba(255,255,255,.3);line-height:1.65">2 rue Joseph Lafranque<br>65200 Bagnères-de-Bigorre</p>
+      <p style="margin-top:1rem;font-size:.68rem;color:rgba(255,255,255,.3);line-height:1.65">2 rue Joseph Lafranque<br>65200 Bagneres-de-Bigorre</p>
       </div>
     </div>
     <div class="foot-btm">
-      <span>&copy; 2026 Aline Haelberg - Tous droits réservés</span>
+      <span>&copy; 2026 Aline Haelberg - Tous droits reserves</span>
       <span style="font-size:.55rem;opacity:.35">by <a href="https://webklein.fr" style="color:inherit">WebKlein</a></span>
     </div>
   </div>
@@ -964,27 +991,27 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
 <div id="modal-mentions" class="legal-modal" onclick="if(event.target===this)this.style.display='none'">
   <div class="legal-modal-content">
     <button class="legal-close" onclick="this.closest('.legal-modal').style.display='none'" aria-label="Fermer">&times;</button>
-    <h2>Mentions légales</h2>
-    <h3>Éditeur du site</h3>
-    <p>Le site <strong>alinehaelberg.fr</strong> est édité par :<br>
+    <h2>Mentions legales</h2>
+    <h3>Editeur du site</h3>
+    <p>Le site <strong>alinehaelberg.fr</strong> est edite par :<br>
     <strong>Aline Haelberg</strong><br>
     Entreprise individuelle<br>
-    Siège : 2 rue Joseph Lafranque, 65200 Bagnères-de-Bigorre<br>
+    Siege : 2 rue Joseph Lafranque, 65200 Bagneres-de-Bigorre<br>
     SIRET : [A COMPLETER]<br>
     TVA non applicable, art. 293 B du CGI</p>
     <p>Directrice de la publication : Aline Haelberg</p>
-    <p>Contact : 07 57 47 43 36</p>
-    <h3>Hébergement</h3>
-    <p>Le site est hébergé par <strong>OVH SAS</strong><br>
+    <p>Contact : contact@alinehaelberg.fr - 07 57 47 43 36</p>
+    <h3>Hebergement</h3>
+    <p>Le site est heberge par <strong>OVH SAS</strong><br>
     2 rue Kellermann, 59100 Roubaix, France<br>
     <a href="https://www.ovhcloud.com" target="_blank" rel="noopener">www.ovhcloud.com</a></p>
     <h3>Conception du site</h3>
-    <p>Site conçu et développé par <strong>WebKlein - L'Artisan du Web</strong><br>
+    <p>Site concu et developpe par <strong>WebKlein - L'Artisan du Web</strong><br>
     <a href="https://webklein.fr" target="_blank" rel="noopener">webklein.fr</a></p>
-    <h3>Propriété intellectuelle</h3>
-    <p>L'ensemble du contenu de ce site (textes, images, photographies, mise en page) est protégé par le droit de la propriété intellectuelle. Toute reproduction, représentation ou diffusion, en tout ou partie, est interdite sans autorisation écrite préalable.</p>
-    <h3>Données personnelles</h3>
-    <p>Pour toute information relative à la collecte et au traitement de vos données personnelles, consultez notre <a href="#" onclick="document.getElementById('modal-mentions').style.display='none';document.getElementById('modal-confidentialite').style.display='flex'">Politique de confidentialité</a>.</p>
+    <h3>Propriete intellectuelle</h3>
+    <p>L'ensemble du contenu de ce site (textes, images, photographies, mise en page) est protege par le droit de la propriete intellectuelle. Toute reproduction, representation ou diffusion, en tout ou partie, est interdite sans autorisation ecrite prealable.</p>
+    <h3>Donnees personnelles</h3>
+    <p>Pour toute information relative a la collecte et au traitement de vos donnees personnelles, consultez notre <a href="#" onclick="document.getElementById('modal-mentions').style.display='none';document.getElementById('modal-confidentialite').style.display='flex'">Politique de confidentialite</a>.</p>
     <p>Pour exercer vos droits : contact@alinehaelberg.fr</p>
     <p>En cas de reclamation : <a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a></p>
     <h3>Cookies</h3>
@@ -995,35 +1022,35 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
 <div id="modal-confidentialite" class="legal-modal" onclick="if(event.target===this)this.style.display='none'">
   <div class="legal-modal-content">
     <button class="legal-close" onclick="this.closest('.legal-modal').style.display='none'" aria-label="Fermer">&times;</button>
-    <h2>Politique de confidentialité</h2>
-    <p style="font-size:.85rem;opacity:.6">Dernière mise à jour : Avril 2026</p>
+    <h2>Politique de confidentialite</h2>
+    <p style="font-size:.85rem;opacity:.6">Derniere mise a jour : Avril 2026</p>
     <h3>1. Responsable du traitement</h3>
     <p><strong>Aline Haelberg</strong><br>
-    2 rue Joseph Lafranque, 65200 Bagnères-de-Bigorre<br>
+    2 rue Joseph Lafranque, 65200 Bagneres-de-Bigorre<br>
     Contact : contact@alinehaelberg.fr</p>
-    <h3>2. Données collectées</h3>
+    <h3>2. Donnees collectees</h3>
     <p><strong>Via le formulaire de contact :</strong></p>
-    <ul><li>Nom et prénom</li><li>Adresse email</li><li>Numéro de téléphone (si renseigné)</li><li>Contenu du message</li></ul>
-    <p><strong>Données de navigation (collecte automatique) :</strong></p>
-    <ul><li>Adresse IP (anonymisée par l'hébergeur)</li><li>Type de navigateur et système d'exploitation</li><li>Pages consultées et durée de visite</li></ul>
-    <h3>3. Finalités</h3>
-    <p>Les données collectées sont utilisées exclusivement pour répondre à vos demandes de contact et assurer le bon fonctionnement technique du site. Aucune utilisation commerciale, publicitaire ou de profilage.</p>
+    <ul><li>Nom et prenom</li><li>Adresse email</li><li>Numero de telephone (si renseigne)</li><li>Contenu du message</li></ul>
+    <p><strong>Donnees de navigation (collecte automatique) :</strong></p>
+    <ul><li>Adresse IP (anonymisee par l'hebergeur)</li><li>Type de navigateur et systeme d'exploitation</li><li>Pages consultees et duree de visite</li></ul>
+    <h3>3. Finalites</h3>
+    <p>Les donnees collectees sont utilisees exclusivement pour repondre a vos demandes de contact et assurer le bon fonctionnement technique du site. Aucune utilisation commerciale, publicitaire ou de profilage.</p>
     <h3>4. Base legale</h3>
-    <ul><li><strong>Intérêt légitime</strong> pour les données de navigation (fonctionnement du site)</li><li><strong>Consentement</strong> pour les données transmises via le formulaire</li></ul>
+    <ul><li><strong>Interet legitime</strong> pour les donnees de navigation (fonctionnement du site)</li><li><strong>Consentement</strong> pour les donnees transmises via le formulaire</li></ul>
     <h3>5. Destinataires</h3>
-    <p>Les données sont destinées uniquement à Aline Haelberg. Aucune transmission à des tiers, sauf obligation légale.</p>
-    <h3>6. Durée de conservation</h3>
-    <ul><li>Données du formulaire : 12 mois maximum</li><li>Données de navigation : 1 an maximum</li></ul>
+    <p>Les donnees sont destinees uniquement a Aline Haelberg. Aucune transmission a des tiers, sauf obligation legale.</p>
+    <h3>6. Duree de conservation</h3>
+    <ul><li>Donnees du formulaire : 12 mois maximum</li><li>Donnees de navigation : 1 an maximum</li></ul>
     <h3>7. Cookies</h3>
-    <p>Ce site n'utilise <strong>aucun cookie publicitaire, de suivi ou d'analyse comportementale</strong>. Seuls des cookies strictement nécessaires au fonctionnement technique peuvent être déposés.</p>
+    <p>Ce site n'utilise <strong>aucun cookie publicitaire, de suivi ou d'analyse comportementale</strong>. Seuls des cookies strictement necessaires au fonctionnement technique peuvent etre deposes.</p>
     <h3>8. Vos droits</h3>
-    <p>Conformément au RGPD, vous disposez des droits suivants :</p>
-    <ul><li><strong>Accès</strong> : obtenir une copie de vos données</li><li><strong>Rectification</strong> : corriger des données inexactes</li><li><strong>Effacement</strong> : demander la suppression</li><li><strong>Opposition</strong> : vous opposer au traitement</li><li><strong>Limitation</strong> : restreindre le traitement</li><li><strong>Portabilité</strong> : recevoir vos données dans un format structuré</li></ul>
+    <p>Conformement au RGPD, vous disposez des droits suivants :</p>
+    <ul><li><strong>Acces</strong> : obtenir une copie de vos donnees</li><li><strong>Rectification</strong> : corriger des donnees inexactes</li><li><strong>Effacement</strong> : demander la suppression</li><li><strong>Opposition</strong> : vous opposer au traitement</li><li><strong>Limitation</strong> : restreindre le traitement</li><li><strong>Portabilite</strong> : recevoir vos donnees dans un format structure</li></ul>
     <p>Pour exercer ces droits : <strong>contact@alinehaelberg.fr</strong></p>
-    <p>Délai de réponse : un mois maximum.</p>
-    <h3>9. Réclamation</h3>
-    <p>En cas de différend, vous pouvez saisir la CNIL :<br>
-    <strong>Commission Nationale de l'Informatique et des Libertés</strong><br>
+    <p>Delai de reponse : un mois maximum.</p>
+    <h3>9. Reclamation</h3>
+    <p>En cas de differend, vous pouvez saisir la CNIL :<br>
+    <strong>Commission Nationale de l'Informatique et des Libertes</strong><br>
     3 Place de Fontenoy, TSA 80715, 75334 Paris Cedex 07<br>
     <a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a></p>
   </div>
@@ -1074,7 +1101,34 @@ window.addEventListener('scroll', () => {
   nav.style.boxShadow = window.scrollY > 20 ? '0 2px 20px rgba(0,0,0,.08)' : 'none';
 }, { passive: true });
 
+// --- Email obfuscation ---
+(function(){
+  var u='contact', d='alinehaelberg.fr';
+  var el = document.getElementById('cmail');
+  if(el){
+    var a = document.createElement('a');
+    a.href = 'mailto:'+u+'@'+d;
+    a.textContent = u+'@'+d;
+    el.appendChild(a);
+  }
+})();
 
+// --- Formulaire AJAX ---
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var form = this;
+  var data = new FormData(form);
+  fetch('contact.php', { method: 'POST', body: data })
+    .then(function(r) {
+      if (r.ok) {
+        form.style.display = 'none';
+        document.getElementById('form-success').style.display = 'block';
+      } else {
+        alert('Erreur lors de l\'envoi. Veuillez reessayer.');
+      }
+    })
+    .catch(function() { alert('Erreur reseau. Verifiez votre connexion.'); });
+});
 
 // --- Fermeture modales Escape ---
 document.addEventListener('keydown', function(e) {
