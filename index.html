@@ -6,6 +6,9 @@
 <title>Aline Haelberg - Kinésiologue à Bagnères-de-Bigorre</title>
 <meta name="description" content="Aline Haelberg, kinésiologue certifiée CFK à Bagnères-de-Bigorre. Séances de kinésiologie adultes et enfants, soin rituel rebozo, accompagnement périnatal et supervision de kinésiologues.">
 <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Nunito+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -64,8 +67,10 @@ ul{list-style:none}
 /* ---- NAV ---- */
 .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,251,242,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);height:64px;display:flex;align-items:center}
 .nav-in{display:flex;align-items:center;justify-content:space-between;width:100%}
-.logo-name{font-family:var(--serif);font-size:1.15rem;font-weight:500;color:var(--deep)}
-.logo-sub{font-size:.6rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--mid);margin-top:2px}
+.logo-link{display:flex;align-items:center;gap:.7rem}
+.logo-img{height:40px;width:auto;display:block}
+.logo-name{font-family:var(--serif);font-size:1.15rem;font-weight:500;color:var(--deep);line-height:1.2}
+.logo-sub{font-size:.6rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--mid);margin-top:1px}
 .nav-links{display:flex;align-items:center;gap:1.75rem}
 .nav-links a{font-size:.78rem;font-weight:500;color:var(--mid);transition:color .35s cubic-bezier(.4,0,.2,1)}
 .nav-links a:hover{color:var(--deep)}
@@ -431,6 +436,9 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
 @media(max-width:900px){
   .nav-links{display:none}
   .burger{display:flex}
+  .logo-img{height:34px}
+  .logo-name{font-size:1rem}
+  .logo-sub{font-size:.5rem}
   .hero-wrap{text-align:left}
   .hero-pictos{bottom:30px;flex-wrap:wrap}
   .hero-picto{padding:.7rem .3rem;gap:.4rem}
@@ -455,9 +463,12 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
 <!-- NAV -->
 <header class="nav">
   <div class="wrap nav-in">
-    <a href="#" style="display:flex;flex-direction:column;line-height:1">
-      <span class="logo-name">Aline Haelberg</span>
-      <span class="logo-sub">Kinésiologue - Bagnères-de-Bigorre</span>
+    <a href="#" class="logo-link">
+      <img src="imageslogo-nav.webp" alt="Logo Aline Haelberg" class="logo-img" width="61" height="40">
+      <span style="display:flex;flex-direction:column;line-height:1">
+        <span class="logo-name">Aline Haelberg</span>
+        <span class="logo-sub">Kinésiologue - Bagnères-de-Bigorre</span>
+      </span>
     </a>
     <ul class="nav-links">
       <li><a href="#kinesiologie">La kinésiologie</a></li>
