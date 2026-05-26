@@ -155,7 +155,7 @@ ul{list-style:none}
   justify-content: center;
   gap: 0;
   position: absolute;
-  bottom: 50px;
+  bottom: 90px;
   left: 0;
   right: 0;
   z-index: 10;
@@ -206,27 +206,6 @@ ul{list-style:none}
   line-height: 1.3;
 }
 
-/* Fleche scroll */
-.hero-scroll {
-  position: absolute;
-  bottom: 2.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: .5rem;
-  color: rgba(255,255,255,.5);
-  font-size: .62rem;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  animation: fadeIn 1.2s ease both, scrollBounce 2.5s ease-in-out 1.5s infinite;
-}
-.hero-scroll svg { opacity: .55; }
-@keyframes scrollBounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50%       { transform: translateX(-50%) translateY(6px); }
-}
 
 .hero-mtn { position:absolute; bottom:0; left:0; right:0; pointer-events:none; }
 
@@ -580,16 +559,6 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
     </a>
   </div>
 
-  <div class="hero-scroll">
-    <svg width="16" height="24" viewBox="0 0 16 24" fill="none" stroke="currentColor" stroke-width="1.5">
-      <rect x="1" y="1" width="14" height="22" rx="7"/>
-      <circle cx="8" cy="7" r="2" fill="currentColor" stroke="none">
-        <animate attributeName="cy" values="7;14;7" dur="2s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
-      </circle>
-    </svg>
-    Decouvrir
-  </div>
 
   <svg style="position:absolute;bottom:-1px;left:0;right:0;pointer-events:none" viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
     <path d="M0,80 L0,40 Q180,0 360,30 Q540,60 720,20 Q900,-20 1080,25 Q1260,70 1440,35 L1440,80Z" fill="#FFFBF2"/>
