@@ -401,7 +401,7 @@ ul{list-style:none}
 .pourqui-list li{display:flex;align-items:flex-start;gap:.65rem;font-size:.85rem;margin-bottom:.6rem;line-height:1.5;break-inside:avoid}
 .pourqui-list li::before{content:'\25E6';color:var(--sage);flex-shrink:0;margin-top:2px}
 .techniques-list{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
-.tech-tag{font-size:.7rem;font-weight:500;letter-spacing:.04em;padding:.35rem .85rem;border-radius:20px;background:var(--sage-pale);color:var(--deep);border:1px solid var(--line)}
+.tech-tag{font-size:.7rem;font-weight:500;letter-spacing:.04em;padding:.35rem .85rem;border-radius:20px;background:var(--sage-pale);color:var(--deep);border:1px solid var(--line);white-space:nowrap}
 
 /* ---- SEANCES ---- */
 .seances{padding:5rem 0;background:transparent}
@@ -452,6 +452,7 @@ ul{list-style:none}
 .perinatal-grid{display:grid;grid-template-columns:1fr 1.15fr 0.7fr;gap:2.5rem;align-items:stretch}
 .peri-illu{position:relative;min-height:0}
 .peri-illu img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;display:block}
+.perinatal-grid>div{display:flex;flex-direction:column;justify-content:center}
 .peri-list li{display:flex;align-items:flex-start;gap:.65rem;font-size:.85rem;margin-bottom:.5rem;line-height:1.5}
 .peri-list li::before{content:'\25E6';color:var(--sage);flex-shrink:0;margin-top:2px}
 .peri-other{margin-top:1.5rem}
@@ -785,7 +786,7 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
         </ul>
       </div>
     </div>
-    <div class="r" style="text-align:center;max-width:760px;margin:3rem auto 0">
+    <div class="r" style="text-align:center;max-width:920px;margin:3rem auto 0">
       <p class="prob-h" style="text-align:center">Techniques utilisées</p>
       <div class="techniques-list" style="justify-content:center">
         <span class="tech-tag">Santé par le toucher</span>
@@ -794,7 +795,7 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem}
         <span class="tech-tag">3 concepts en 1</span>
         <span class="tech-tag">Éducation Kinesthésique</span>
       </div>
-      <p style="font-size:.82rem;color:var(--mid);margin-top:1.5rem;line-height:1.7">J'utilise également l'<strong style="color:var(--ink)">intégration des réflexes archaïques</strong> de manière complémentaire à la kinésiologie, ainsi que l'<strong style="color:var(--ink)">écoute active</strong> et la <strong style="color:var(--ink)">communication bienveillante</strong> (CNV - Marshall Rosenberg).</p>
+      <p style="font-size:.82rem;color:var(--mid);margin:1.5rem auto 0;line-height:1.7;max-width:640px">J'utilise également l'<strong style="color:var(--ink)">intégration des réflexes archaïques</strong> de manière complémentaire à la kinésiologie, ainsi que l'<strong style="color:var(--ink)">écoute active</strong> et la <strong style="color:var(--ink)">communication bienveillante</strong> (CNV - Marshall Rosenberg).</p>
     </div>
   </div>
 </section>
