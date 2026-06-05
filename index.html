@@ -182,17 +182,17 @@ ul{list-style:none}
 
 /* ---- HELPERS ---- */
 .wrap{max-width:1100px;margin:0 auto;padding:0 2rem}
-.lbl{font-family:var(--sans);font-size:.68rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--earth);margin-bottom:.9rem;display:block}
-.h2{font-family:var(--serif);font-size:clamp(1.9rem,3.5vw,2.7rem);font-weight:400;line-height:1.2}
-.h2 em{font-style:italic;color:var(--deep)}
+.lbl{font-family:var(--sans);font-size:.68rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--lav);margin-bottom:.9rem;display:block}
+.h2{font-family:var(--serif);font-size:clamp(1.9rem,3.5vw,2.7rem);font-weight:400;line-height:1.2;color:var(--lav)}
+.h2 em{font-style:italic;color:#44489E}
 .bar{width:44px;height:2px;background:var(--sage);margin:1.2rem 0 1.5rem}
 .btn{display:inline-block;padding:.8rem 1.8rem;border-radius:3px;font-family:var(--sans);font-size:.8rem;font-weight:600;letter-spacing:.05em;transition:background .35s cubic-bezier(.4,0,.2,1),transform .35s cubic-bezier(.4,0,.2,1),box-shadow .35s cubic-bezier(.4,0,.2,1),color .35s cubic-bezier(.4,0,.2,1),border-color .35s cubic-bezier(.4,0,.2,1);cursor:pointer;border:none}
 .btn-p{background:var(--sage);color:#fff}
 .btn-p:hover{background:var(--deep);transform:translateY(-2px);box-shadow:0 8px 24px rgba(201,168,44,.25)}
 .btn-o{border:1.5px solid var(--deep);color:var(--deep);background:transparent}
 .btn-o:hover{background:var(--deep);color:#fff;transform:translateY(-2px)}
-.btn-e{background:var(--earth);color:#fff}
-.btn-e:hover{background:#7e6040;transform:translateY(-2px)}
+.btn-e{background:var(--deep);color:#fff}
+.btn-e:hover{background:#b8932b;transform:translateY(-2px)}
 
 /* ---- NAV ---- */
 .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,251,242,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);height:90px;display:flex;align-items:center}
@@ -434,15 +434,15 @@ ul{list-style:none}
 
 /* ---- REBOZO ---- */
 .rebozo{padding:5rem 0;background:transparent;position:relative;overflow:hidden}
-.rebozo::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--earth),var(--sage),var(--earth))}
+.rebozo::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--deep),var(--sage),var(--deep))}
 .rebozo-grid{display:grid;grid-template-columns:1fr 1.2fr 1fr;gap:3rem;align-items:center}
 .rebozo-img{border-radius:6px;overflow:hidden;aspect-ratio:3/4;max-height:480px}
 .rebozo-img img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.9) contrast(.95)}
 .rebozo-details{display:flex;flex-direction:column;gap:.65rem;margin:1.5rem 0}
 .rebozo-detail{display:flex;align-items:flex-start;gap:.65rem;font-size:.85rem;line-height:1.5}
-.rebozo-detail::before{content:'\2022';color:var(--earth);flex-shrink:0}
-.rebozo-price{background:var(--earth-pale);border:1px solid rgba(139,115,85,.2);border-radius:5px;padding:1.5rem;text-align:center;margin-top:1.5rem}
-.rebozo-price .price{font-family:var(--serif);font-size:2rem;color:var(--earth);font-weight:500}
+.rebozo-detail::before{content:'\2022';color:var(--deep);flex-shrink:0}
+.rebozo-price{background:var(--sage-pale);border:1px solid rgba(201,168,44,.25);border-radius:5px;padding:1.5rem;text-align:center;margin-top:1.5rem}
+.rebozo-price .price{font-family:var(--serif);font-size:2rem;color:var(--deep);font-weight:500}
 .rebozo-price p{font-size:.75rem;color:var(--mid);margin-top:.3rem}
 
 /* ---- PERINATAL ---- */
