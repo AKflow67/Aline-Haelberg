@@ -12,7 +12,7 @@
   --sans:"Nunito Sans","Segoe UI",system-ui,sans-serif;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:130px}
 body{font-family:var(--sans);background:var(--cream);color:var(--ink);line-height:1.7;font-size:16px;overflow-x:hidden}
 img{display:block;max-width:100%}
 a{text-decoration:none;color:inherit}
@@ -30,8 +30,15 @@ ul{list-style:none}
 .btn-o:hover{background:var(--deep);color:#fff;transform:translateY(-2px)}
 
 /* ---- NAV ---- */
-.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,251,242,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);height:90px;display:flex;align-items:center}
-.nav-in{display:flex;align-items:center;justify-content:space-between;width:100%}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,251,242,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);display:flex;flex-direction:column;align-items:stretch}
+.nav-in{display:flex;align-items:center;justify-content:space-between;width:100%;height:90px}
+/* ---- TOPBAR (pages dediees) ---- */
+.topbar{background:var(--sage-pale);border-bottom:1px solid var(--line)}
+.topbar-in{display:flex;justify-content:flex-end;align-items:center;gap:1.5rem;height:34px}
+.topbar-lbl{font-size:.6rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--earth);margin-right:.25rem}
+.topbar a{font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--earth);transition:color .3s ease}
+.topbar a:hover{color:var(--deep)}
+.topbar a.active{color:var(--deep);font-size:.74rem;font-weight:800;border-bottom:2px solid var(--deep);padding-bottom:1px}
 .logo-name{font-family:var(--serif);font-size:1.15rem;font-weight:500;color:var(--deep)}
 .logo-sub{font-size:.6rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--mid);margin-top:2px}
 .nav-links{display:flex;align-items:center;gap:1.75rem}
@@ -41,12 +48,13 @@ ul{list-style:none}
 .nav-cta{background:var(--deep);color:#fff!important;padding:.55rem 1.3rem;border-radius:3px;font-size:.75rem!important}
 .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none}
 .burger span{width:22px;height:2px;background:var(--ink);transition:transform .3s ease,opacity .3s ease}
-.mobile-menu{display:none;position:fixed;top:90px;left:0;right:0;background:rgba(255,251,242,.98);backdrop-filter:blur(10px);padding:1.5rem 2rem;border-bottom:1px solid var(--line);flex-direction:column;gap:1rem;z-index:99}
+.mobile-menu{display:none;position:fixed;top:124px;left:0;right:0;background:rgba(255,251,242,.98);backdrop-filter:blur(10px);padding:1.5rem 2rem;border-bottom:1px solid var(--line);flex-direction:column;gap:1rem;z-index:99}
 .mobile-menu.open{display:flex}
 .mobile-menu a{font-size:.9rem;font-weight:500;color:var(--mid);padding:.5rem 0}
+.mm-lbl{font-size:.6rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--deep);margin-top:.5rem;border-top:1px solid var(--line);padding-top:1rem;display:block}
 
 /* ---- EN-TETE DE PAGE ---- */
-.page-hero{background:var(--cream-dk);padding:140px 0 56px;position:relative;overflow:hidden}
+.page-hero{background:var(--cream-dk);padding:170px 0 56px;position:relative;overflow:hidden}
 .page-hero::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--deep),var(--sage),var(--deep))}
 .page-hero h1{font-family:var(--serif);font-size:clamp(2rem,4vw,2.9rem);font-weight:400;line-height:1.15;color:var(--ink);max-width:820px}
 .page-hero h1 em{font-style:italic;color:var(--deep)}
@@ -124,7 +132,11 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:3rem 0 2rem;mar
 @media(max-width:900px){
   .nav-links{display:none}
   .burger{display:flex}
-  .page-hero{padding:120px 0 44px}
+  .topbar-lbl{display:none}
+  .topbar-in{justify-content:center;gap:1.1rem}
+  .topbar a{font-size:.6rem;letter-spacing:.06em}
+  .topbar a.active{font-size:.66rem}
+  .page-hero{padding:150px 0 44px}
   .two-col,.gcards,.gcards-2,.ville-grid{grid-template-columns:1fr;gap:1.5rem}
   .acc-head{padding:1.1rem 1.25rem}
   .acc-body-inner{padding:0 1.25rem 1.3rem}
